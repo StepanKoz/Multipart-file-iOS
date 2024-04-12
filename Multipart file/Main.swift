@@ -14,7 +14,7 @@ func uploadImage(paramName: String, fileName: String, image: Data, Id: Int, comp
     // Add image data
     body.append("--\(boundary)\r\n".data(using: .utf8)!)
     body.append("Content-Disposition: form-data; name=\"file\"; filename=\"\(fileName)\"\r\n".data(using: .utf8)!)
-    body.append("Content-Type: image/png\r\n\r\n".data(using: .utf8)!)
+    body.append("Content-Type: image/jpg\r\n\r\n".data(using: .utf8)!)
     body.append(image)
     body.append("\r\n".data(using: .utf8)!)
     
